@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Эффект плавающего текста в фокусе</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="margin">
+    <div>
+        <img class="logo" src="Image/Shooter_tv_logo.png">
+    </div>
+    <wrapper>
+        <div class="dws-wrapper">
+            <input type="checkbox" name="toggle" id="dws-form" class="toggleForm">
+            <div class="dws-container">
+                <label for="dws-form" class="toggleForm">Make a question</label>
+                <form class="formBox">
+                    <div class="inputBox">
+                        <label class="lableText">Your Name:</label>
+                        <input type="text" class="userInput" required>
+                    </div>
+                    <div class="inputBox">
+                        <label class="lableText">E-mail:</label>
+                        <input type="text" class="userInput" required>
+                    </div>
+                    <div class="inputBox">
+                        <label class="lableText">Text:</label>
+                        <textarea class="userInput" required></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="checkbox" required>
+                        <label>I agree with the processing of my personal data</label>
+                    </div>
+                    <input type="submit" value="Send" class="button">
+                </form>
+            </div>
+        </div>
+    </wrapper>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Galery.html">Galery</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+        </ul>
+    </div>
+    <div class="left">
+        Advert
+    </div>
+    <div class="wrapper main">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iQG6gTB4_Tc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/A-nU3gA_ITw?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/m3_lwPTWLcs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="right">
+        Advert
+    </div>
+    <div class="footer">
+        This site, still in progress.
+    </div>
+    <script>
+        $(".userInput").focus(function () {
+            $(this).parent().addClass("focus")
+        }).blur(function () {
+            if($(this).val()===''){
+                $(this).parent().removeClass("focus")
+            }
+        })
+    </script>
+</div>
+</body>
+</html>
