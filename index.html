@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Эффект плавающего текста в фокусе</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<div class="margin">
+    <div>
+        <img class="logo" src="Image/Shooter_tv_logo.png">
+    </div>
+    <wrapper>
+        <div class="dws-wrapper">
+            <input type="checkbox" name="toggle" id="dws-form" class="toggleForm">
+            <div class="dws-container">
+                <label for="dws-form" class="toggleForm">Make a question</label>
+                <form class="formBox">
+                    <div class="inputBox">
+                        <label class="lableText">Your Name:</label>
+                        <input type="text" class="userInput" required>
+                    </div>
+                    <div class="inputBox">
+                        <label class="lableText">E-mail:</label>
+                        <input type="text" class="userInput" required>
+                    </div>
+                    <div class="inputBox">
+                        <label class="lableText">Text:</label>
+                        <textarea class="userInput" required></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="checkbox" required>
+                        <label>I agree with the processing of my personal data</label>
+                    </div>
+                    <input type="submit" value="Send" class="button">
+                </form>
+            </div>
+        </div>
+    </wrapper>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Galery.html">Galery</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+        </ul>
+    </div>
+    <div class="left">
+        Advert
+    </div>
+    <div class="wrapper main">
+        <h1 class="news">Shooter</h1>
+        <p class="news">Shooter games are a subgenre of action game, which often test the player's speed and reaction time. It includes many subgenres that have the commonality of focusing on the actions of the avatar using some sort of weapon. Usually this weapon is a gun, try to get or some other long-range weapon. A common resource found in many shooter games is ammunition. Most commonly, the purpose of a shooter game is to shoot opponents and proceed through missions without the player character being killed or dying. A shooting game is a genre of video game where the player has limited spatial control of his or her character, and the focus is almost entirely on the defeat of the character's enemies using long-range weaponry.</p>
+        <img class="mainpage" src="Image/Black-Ops-III-580737c45f9b5805c23d0693.jpg">
+        <h3 class="news">Perspective</h3>
+        <p class="news">In a first-person shooter, the player usually views the events from a camera angle which simulates the character's point of view, while third-person shooters use a camera which follows the character and can often be controlled by the player. It is also possible for a game to have a fixed camera, especially shooting gallery games and some 2D overhead shooters such as Robotron 2084.</p>
+        <img class="mainpage" src="Image/escape_from_tarkov.0.0-800x445.jpg">
+        <h3 class="news">Realism</h3>
+        <p class="news">Tactical shooters are games that attempt to emulate lifelike ballistics and character damage, one example is Rainbow Six. Other shooter games range further away from realism and towards fantasy, like the Sci-Fi action shooting series titled Lost Planet.</p>
+        <img  class="mainpage" src="Image/1501503180169128188.jpg">
+    </div>
+    <div class="right">
+        Advert
+    </div>
+    <div class="footer">
+        This site, still in progress.
+    </div>
+    <script>
+        $(".userInput").focus(function () {
+            $(this).parent().addClass("focus")
+        }).blur(function () {
+            if($(this).val()===''){
+                $(this).parent().removeClass("focus")
+            }
+        })
+    </script>
+</div>
+</body>
+</html>
