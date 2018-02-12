@@ -113,24 +113,12 @@ li a {
 .news {
     text-align: center;
 }
-.left {
-    float: left;
-    display: block;
-    width: 100px;
-    background-color: #ffffff;
-}
 .main {
     background: #fff;
     display: block;
-    width: 800px;
+    width: 1000px;
     margin 0;
     float: left;
-}
-.right {
-    float: left;
-    display: block;
-    width: 100px;
-    background-color: #ffffff;
 }
 .menu {
     display: block;
