@@ -96,7 +96,6 @@ ul {
     background-color: darkred;
 }
 li {
-    float: left;
     width: 33%;
     text-align: center;
     padding: 0;
@@ -146,7 +145,7 @@ iframe {
     padding-bottom: 10px;
     padding-right: 15px;
     padding-top: 10px;
-    width: 96%;
+    width: 100%;
 }
 .margin {
     max-width: 1000px;
@@ -168,4 +167,35 @@ iframe {
 .logosize {
     width: 1000px;
     height: 200px;
+}
+.navbar-nav {
+    width: 1000px;
+}
+.nav-item {
+    width: 25%;
+    text-align: center;
+    padding: 0;
+    float: left;
+    height: 50px;
+}
+.navbar2 {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0;
+    border: none;
+}
+.btn {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-shadow: darkgray;
+    padding: 15px;
+    font-weight: bold;
+}
+#single_image {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-top: 10px;
+    width: 50%;
 }
